@@ -17,9 +17,7 @@ dependencies:
   # supabase_flutter: ^1.0.0-dev.3
   # supabase: 
   #   path: ../supabase-dart
-  # supabase: ^1.0.0-dev.3
-  realtime_client:
-    path: ../realtime-dart
+  supabase_flutter: ^1.0.0-dev.3
 
 dev_dependencies:
   flutter_test:
