@@ -17,7 +17,13 @@ dependencies:
   # supabase_flutter: ^1.0.0-dev.3
   # supabase: 
   #   path: ../supabase-dart
-  supabase_flutter: ^1.0.0-dev.3
+  supabase_flutter: ^1.0.0
+  cloud_firestore: ^4.0.2
+  # supabase_flutter: 0.3.3
+  # supabase: ^1.0.0-dev.8
+  # supabase:
+  #   path: ../supabase-dart
+
 
 dev_dependencies:
   flutter_test:
