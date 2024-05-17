@@ -6,30 +6,59 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: '>=2.19.0 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
+  go_router: ^6.2.0
+  url_launcher: ^6.2.2
+  # url_strategy: ^0.2.0
+  # realtime_client: 1.1.0
   # supabase_flutter:
-  #   path: ../supabase-flutter
-  # supabase_flutter: ^1.0.0-dev.3
-  # supabase: 
-  #   path: ../supabase-dart
-  supabase_flutter: ^1.0.0
-  cloud_firestore: ^4.0.2
-  # supabase_flutter: 0.3.3
-  # supabase: ^1.0.0-dev.8
+  #   path: ../supabase-flutter/packages/supabase_flutter
+  # supabase: 1.5.0
   # supabase:
   #   path: ../supabase-dart
-
+  image_picker: ^0.8.7+3
+  # shared_preferences: ^2.2.1
+  supabase_flutter: ^2.0.0
+  # supabase: 1.11.6
+  # gotrue: 1.12.2
+  # postgrest: 1.5.1
+  # realtime_client: 1.2.3
+  # storage_client: 1.5.2
+  rxdart: ^0.27.5
+  cached_network_image: ^3.3.0
+  flutter_cache_manager: ^3.3.1
+  flutter_secure_storage: ^9.0.0
+  fetch_client: ^1.0.2
+  stack_trace: ^1.11.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  mockito: ^5.4.0
 
   flutter_lints: ^2.0.0
-
 flutter:
   uses-material-design: true
+melos_managed_dependency_overrides: functions_client,gotrue,postgrest,realtime_client,storage_client,yet_another_json_isolate
+dependency_overrides:
+  functions_client:
+    path: ../supabase-flutter/packages/functions_client
+  gotrue:
+    path: ../supabase-flutter/packages/gotrue
+  postgrest:
+    path: ../supabase-flutter/packages/postgrest
+  realtime_client:
+    path: ../supabase-flutter/packages/realtime_client
+  storage_client:
+    path: ../supabase-flutter/packages/storage_client
+  supabase:
+    path: ../supabase-flutter/packages/supabase
+  yet_another_json_isolate:
+    path: ../supabase-flutter/packages/yet_another_json_isolate
+  supabase_flutter:
+    path: ../supabase-flutter/packages/supabase_flutter

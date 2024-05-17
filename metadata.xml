@@ -1,0 +1,37 @@
+<EntityDescriptor
+  xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+  validUntil="2024-01-17T06:17:11.911Z"
+  entityID="https://wblagmqrvrpffsrkkses.supabase.red/auth/v1/sso/saml/metadata"
+  ><SPSSODescriptor
+    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+    validUntil="2024-01-17T06:17:11.910664377Z"
+    protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
+    WantAssertionsSigned="true"
+    ><KeyDescriptor use="signing"
+      ><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"
+        ><X509Data xmlns="http://www.w3.org/2000/09/xmldsig#"
+          ><X509Certificate xmlns="http://www.w3.org/2000/09/xmldsig#"
+            >MIIDTzCCAjegAwIBAgIBADANBgkqhkiG9w0BAQsFADBFMUMwQQYDVQQDEzpTQU1MIDIuMCBDZXJ0aWZpY2F0ZSBmb3Igd2JsYWdtcXJ2cnBmZnNya2tzZXMuc3VwYWJhc2UucmVkMCAXDTcwMDEwMTAwMDAwMFoYDzIxNzAwMTAxMDAwMDAwWjBFMUMwQQYDVQQDEzpTQU1MIDIuMCBDZXJ0aWZpY2F0ZSBmb3Igd2JsYWdtcXJ2cnBmZnNya2tzZXMuc3VwYWJhc2UucmVkMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmnDSE5Qa33fyAFmKJaOWTpayJYHjV8wtRF4UVxoSHmuE8V614adXN6LgzrMobrHWVgbcWgN5fNqxwt8araVM+fEO4pE6ouBRyL34pC5jTby2YUIoVboN2vsf0L6ND93j0+Nd3Gx/YX1varTvp5KmHGc7H6AcQhOnEIuH1VZ3wzS04FwglfSpz8ULFWYZW4A20mEVhSdgtVB+YxQ8Gl+ilGs4TzbJZko9w3s+qtsHW4+hTIYmnpDBN0MwPMsg6L11wcpkiVIfjSNuAy+nIK5jPtMQQU9o9l9tQbM8cUydWcoeP+Wz4k9a8Xj4hBV5WN2/4bdwFuWfbe4i0kk7SG2j/wIDAQABo0gwRjAOBgNVHQ8BAf8EBAMCB4AwNAYDVR0RBC0wK4IpX3NhbWxzcC53YmxhZ21xcnZycGZmc3Jra3Nlcy5zdXBhYmFzZS5yZWQwDQYJKoZIhvcNAQELBQADggEBACvR5vF2AWT1R2Sk0WNYQS7i08wX8ugWMKXy0wzekN6RXrb6GBCtVnpMO12gd+LMXLS7jJyRbkb5L4IkpTjSCyzc9XEHCVyXyGlhnenYTf3VgAXsz6OiuT96Rn3L/dt/FZ1CNlUsET39qQ/3uEfzm7j4QgC3BOLILsBi4d0DxaYoNU3CFXB4Sn9QFYY1g3OFMaWZftFjpmUDqD/iYQeal+vPXRC44gg/uTrgstSfIoMlFSOzaOhB6y4YZBZM8wIhwwiDDdidq7ZSMG6KTSVxkVD3SI6RQ1mmezvwY2Jbp/8k4bXnraW4JP6XlDO2abyRnxgwZ1xINJo8RyBwYQCnQBQ=</X509Certificate
+          ></X509Data
+        ></KeyInfo
+      ></KeyDescriptor
+    ><SingleLogoutService
+      Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+      Location="https://wblagmqrvrpffsrkkses.supabase.red/auth/v1/sso/saml/slo"
+      ResponseLocation="https://wblagmqrvrpffsrkkses.supabase.red/auth/v1/sso/saml/slo"
+    ></SingleLogoutService
+    ><NameIDFormat
+      >urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat
+    ><NameIDFormat
+      >urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat
+    ><AssertionConsumerService
+      Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+      Location="https://wblagmqrvrpffsrkkses.supabase.red/auth/v1/sso/saml/acs"
+      index="1"
+    ></AssertionConsumerService
+    ><AssertionConsumerService
+      Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+      Location="https://wblagmqrvrpffsrkkses.supabase.red/auth/v1/sso/saml/acs"
+      index="2"
+    ></AssertionConsumerService></SPSSODescriptor
+></EntityDescriptor>
