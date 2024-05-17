@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:fetch_client/fetch_client.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -24,12 +25,15 @@ const redirectTo = 'io.supabase.newlink://login-callback';
 //     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFpdHZlcGZ4YWNqcmV6Z3B4bmV1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTIwMTYzOTEsImV4cCI6MjAyNzU5MjM5MX0.BUxwtY22CgUFW7e_qAroYAqTqzL9GjsTHoRkeb8gQoo';
 
 Future<void> main() async {
+  final fetchClient = FetchClient(mode: RequestMode.cors);
+
   await Supabase.initialize(
     url: supabaseUrl,
     anonKey: supabaseKey,
     authOptions: const FlutterAuthClientOptions(
       authFlowType: AuthFlowType.implicit,
     ),
+    httpClient: fetchClient,
     debug: false,
   );
 
